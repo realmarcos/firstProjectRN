@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 interface datasValues {
   name: string;
@@ -9,8 +9,9 @@ const List = (datas: datasValues[]) => {
   const list = datas.map((data, index) => {
     return (
       <View style={style.container} key={index}>
-        <Text key={data.name+index}>Name: {data.name}</Text>
-        <Text key={data.age+index}>Age: {data.age}</Text>
+        {/* <Text key={data.name + index}>Name: {data.name}</Text>
+        <Text key={data.age + index}>Age: {data.age}</Text> */}
+        {/* <Text style={style.btn}> Cadastrar </Text> */}
       </View>
     );
   });
